@@ -4,9 +4,10 @@ body{
     text-align: center;
     align-items: center;
     align-content: center;
+    user-select: none;
 }
 
-span{
+#tituloAdivinador{
     color: red;
     text-decoration: underline white 1px;
 }
@@ -15,6 +16,93 @@ h1::first-letter{
     font-size: 150%;
 }
 
-div{
-    padding: 15%;
+#adivinadorDiv{
+    margin-top: 20%;
+    text-shadow: gray 100px 100px 10px;
+}
+
+#goBack{
+    position: absolute;
+    bottom: 3vh;
+    right: 50%;
+}
+
+#inputNombre, #inputNombre:empty{
+    font-size: 30px;
+    box-shadow: gray 100px 100px 10px;
+    background-image: url(img/fondoTexto.gif);
+    border: blue solid 3px;
+}
+
+#adivinarButton{
+    background-color: transparent;
+    border: transparent;
+    border-radius: 100px;
+    cursor: pointer;
+    transform: translateY(10px);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#adivinarButton:active{
+    transform: scale(500%);
+}
+
+#goBackButton{
+    font-size: 20px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+    background: transparent;
+    border: transparent;
+}
+
+#goBackButton:active{
+    transform: rotate(360deg) scale(120%);
+}
+
+#goBackIcon{
+    width: 30px;
+}
+
+#iconoBoton{
+    width: 50px;
+}
+
+#resultado{
+    margin-top: 25vh;
+    display: none;
+    border: 5px blue solid;
+    background-color: royalblue;
+    border-radius: 20px;
+    font-size: 50px;
+    padding: 20px;
+}
+
+#probabilidad, #edadResultado, #generoResultado{
+    color: red;
+}
+
+#nombreBox{
+    text-decoration: underline 3px white;
+    letter-spacing: 3px;
+}
+
+#nombreBox::first-letter{
+    font-size: 150%;
+    color:chartreuse;
+}
+
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    10% { transform: translateX(-10px); }
+    20% { transform: translateX(10px); }
+    30% { transform: translateX(-10px); }
+    40% { transform: translateX(10px); }
+    50% { transform: translateX(-10px); }
+    60% { transform: translateX(10px); }
+    70% { transform: translateX(-10px); }
+    80% { transform: translateX(10px); }
+    90% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
 }

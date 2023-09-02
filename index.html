@@ -12,11 +12,28 @@
     <title>🔮Adivinador🔮</title>
 </head>
 <body>
-    <div>
-        <h1>Bienvenido al <span>adivinador</span></h1>
-        <h2>Ingresa tu edad para continuar</h2>
+    <div id="adivinadorDiv">
+        <h1>Bienvenido al <span id="tituloAdivinador">adivinador</span></h1>
+        <h2>Ingresa tu nombre para continuar</h2>
         <input type="text" name="inputNombre" id="inputNombre">
-        <button id="adivinar">Adivinar 🔮</button>
+        <button id="adivinarButton"><img src="img/icono-boton.png" alt="iconoBoton" id="iconoBoton"></button>
+    </div>
+    <div id="resultado">
+        <div id="nombreBox">
+
+        </div>
+        <br>
+        <div id="edad">
+            Tu edad es <span id="edadResultado"></span>
+        </div>
+        <br>
+        <div id="genero">
+            Hay un <span id="probabilidad"></span> de posibilidad de que seas <span id="generoResultado"></span>
+        </div>
+    </div>
+
+    <div id="goBack">
+        <button id="goBackButton"><img src="img/goBackIcon.png" alt="goBack" id="goBackIcon"></button>
     </div>
 </body>
 </html>
