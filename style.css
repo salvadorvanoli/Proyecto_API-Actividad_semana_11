@@ -1,0 +1,20 @@
+body{
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+span{
+    color: red;
+    text-decoration: underline white 1px;
+}
+
+h1::first-letter{
+    font-size: 150%;
+}
+
+div{
+    padding: 15%;
+}
